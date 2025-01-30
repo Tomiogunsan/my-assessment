@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import "./global.css";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
@@ -17,14 +17,13 @@ export default function App() {
 
   const [fontsLoaded] = useFonts({
     "athletics-regular": require("./assets/fonts/Athletics Regular.otf"),
-    //  "poppins-regular": require("./assets/fonts/Poppins-Regular.woff"),
-    //  "inter": require("./assets/fonts/InterVariable.woff"),
+   
     "athletics-black": require("./assets/fonts/Athletics Black.otf"),
     "athletics-bold": require("./assets/fonts/Athletics Bold.otf"),
     "athletics-extrabold": require("./assets/fonts/Athletics ExtraBold.otf"),
     "athletics-light": require("./assets/fonts/Athletics Light.otf"),
     "athletics-medium": require("./assets/fonts/Athletics Medium.otf"),
-    // "athletics-regular": require("./assets/fonts/Athletics Regular.otf"),
+    
   });
 
 
