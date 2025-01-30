@@ -11,7 +11,7 @@ type IReferralCodeProps = {
 export default function ReferralCode({ navigation }: IReferralCodeProps) {
   const { control } = useForm();
   return (
-    <View className="flex-1   px-[25px] bg-white pt-[57px]">
+    <View className="flex-1   px-[25px] bg-[#f7f7f7] pt-[57px]">
       <View className="flex flex-col h-full justify-between items-center ">
         <View>
           <Text className="text-[32px] font-extrabold text-[#212121] font-athletics-extrabold">

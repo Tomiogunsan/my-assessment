@@ -10,7 +10,7 @@ export default function Input({
   value,
   iconColor,
   iconSize,
-  onBlur,
+
   secureTextEntry,
   iconName,
   keyboardType,
@@ -86,6 +86,8 @@ const styles = StyleSheet.create({
     padding: 5,
     fontSize: 16,
     fontFamily: "athletics-regular",
+  
+   
   },
   icon: {
     marginRight: 5,

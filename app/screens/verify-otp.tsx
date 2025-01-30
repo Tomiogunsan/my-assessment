@@ -22,7 +22,7 @@ export default function VerifyOtp({ navigation }: IVerifyOtpProps) {
      setValue,
    });
   return (
-    <View className="flex-1  pt-[87px] px-[25px] ">
+    <View className="flex-1  pt-[87px] px-[25px] bg-[#f7f7f7]">
       <Text className="text-[32px] font-extrabold text-[#212121] leading-10 font-athletics-extrabold">
         Verify Your Number
       </Text>
@@ -56,11 +56,7 @@ export default function VerifyOtp({ navigation }: IVerifyOtpProps) {
       <View className="flex justify-end  flex-row">
         <Button
           buttonText="Sign Up"
-          buttonSideText={
-            <>
-              <Text>(1/3)</Text>
-            </>
-          }
+         
           onPress={() => navigation.navigate("referralCode")}
         />
       </View>

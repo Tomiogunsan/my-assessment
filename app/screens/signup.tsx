@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Button from "@/shared/Button";
 import { formValidationSchema } from "@/validation";
-import { useState } from "react";
+
 
 type ISignUpProps = {
   navigation: IStackNavigation;
@@ -21,11 +21,11 @@ type ISignupInputFieldProp = {
   confirmPassword: string;
 };
 export default function Signup({ navigation }: ISignUpProps) {
-  const [pressedOnce, setPressedOnce] = useState(false);
+ 
   const {
     control,
     handleSubmit,
-    formState: { isValid },
+   
   } = useForm({
     defaultValues: {
       first_name: "",
@@ -37,18 +37,15 @@ export default function Signup({ navigation }: ISignUpProps) {
     },
     resolver: yupResolver(formValidationSchema),
   });
-
   const onSubmit = (data: ISignupInputFieldProp) => {
-    if (pressedOnce && !isValid) {
+   
       navigation.navigate("verifyOtp");
-    } else {
-      setPressedOnce(true);
-    }
+    
   };
   return (
     <KeyboardAvoidingView>
       <ScrollView>
-        <View className="flex-1  pt-[87px] px-[21px] ">
+        <View className="flex-1  pt-[87px] px-[21px] bg-[#f7f7f7]">
           <View className="flex flex-row justify-between items-center">
             <Text className="text-[32px] font-extrabold text-[#212121] font-athletics-extrabold">
               Sign Up
@@ -123,7 +120,7 @@ export default function Signup({ navigation }: ISignUpProps) {
 
             <Button
               buttonText="Sign Up"
-              buttonSideText={6}
+            
               onPress={handleSubmit(onSubmit)}
             />
 

@@ -5,7 +5,7 @@ import Button from '@/shared/Button';
 
 export default function AppOptions() {
   return (
-    <View className="flex-1 px-[25px] bg-white pt-[87px]">
+    <View className="flex-1 px-[25px] bg-[#f7f7f7] pt-[87px]">
       <Text className="text-[32px] font-[800] leading-10 text-[#212121] font-athletics-extrabold">
         What do you want to use CrowdCargo for today?
       </Text>

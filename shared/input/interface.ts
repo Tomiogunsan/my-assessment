@@ -29,7 +29,6 @@ export type IControlledInputProps<TFieldValues extends FieldValues> = Omit<
   "value" | "name"
 > &
   IBaseControlledField<TFieldValues> & {
-    name: string;
-    // type?: "text" | "number" | "password" | "email" | "date" | "file";
+   
     onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
   };

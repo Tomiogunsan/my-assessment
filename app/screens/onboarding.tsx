@@ -106,7 +106,7 @@ export default function Onboarding({ navigation }: IOnboardingProps) {
                 />
               </View>
 
-              <View className=" px-[35px] absolute bottom-[260px]  ">
+              <View className=" px-[35px] absolute bottom-[187px]  ">
                 <Text className="font-extrabold text-[40px] text-white leading-[43px] font-athletics-extrabold">
                   {item.title}
                 </Text>
@@ -174,7 +174,10 @@ export default function Onboarding({ navigation }: IOnboardingProps) {
         renderPrevButton={() => (
           <If condition={currentIndex !== 2}>
             <Then>
-              <TouchableOpacity className="bg-[#fff] rounded-[48px] py-[17px] px-[30px] absolute bottom-0 right-[-270px] flex gap-2 items-center flex-row justify-center">
+              <TouchableOpacity
+                className="bg-[#fff] rounded-[48px] py-[17px] px-[30px] absolute bottom-0 right-[-270px] flex gap-2 items-center flex-row justify-center"
+                onPress={() => setCurrentIndex((prev) => Math.max(prev - 1, 0))}
+              >
                 <Text>Swipe left</Text>
                 <Feather name="chevrons-right" size={24} color="#414141" />
               </TouchableOpacity>
